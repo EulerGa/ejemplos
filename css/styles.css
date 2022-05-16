@@ -36,10 +36,10 @@ header {
 
 }
 
-/* .header-text:hover {
+.header-text:hover {
 
     background-color: rgba(255, 255, 255, 0.3);
-} */
+}
 
 .header-text h1 {
     font-size: calc(2rem + 2vw);
