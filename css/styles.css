@@ -148,9 +148,9 @@ img {
 
     }
 
-    .nav-toggle:focus:not(:focus-visible) {
+    /* .nav-toggle:focus:not(:focus-visible) {
         outline: none;
-    }
+    } */
 
 
 }
