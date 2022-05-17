@@ -188,7 +188,7 @@ figure.snip0015 {
     max-width: 310px;
     max-height: 220px;
     width: 100%;
-    background: var(--purple-dark);
+    background: var(--purple-light);
     text-align: center;
 
 
@@ -291,6 +291,7 @@ figure.snip0015:hover figcaption h2 {
 } */
 
 figure.snip0015:hover figcaption::before {
+    /* background: var(--purple-light); */
     background: rgba(255, 255, 255, 0);
     top: 30px;
     bottom: 30px;
