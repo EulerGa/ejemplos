@@ -99,7 +99,7 @@
     transition: .5s ease all;
 }
 
-.nav .nav-menu .link:active {
+.nav .nav-menu .link:hover {
     transform: translateY(40%);
     background-color: var(--purple-light);
 }
@@ -343,10 +343,10 @@ figure.snip0015:hover figcaption::before {
 
         font-size: calc(0.8rem + 0.8vw);
         color: var(--gray-light);
-        transition: .5s ease all;
+        transition: 0.5s ease all;
     }
 
-    .nav .nav-menu .link:active {
+    .nav .nav-menu .link:hover {
         transform: translateX(40%);
         background-color: var(--purple-light);
 
