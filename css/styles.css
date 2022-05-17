@@ -346,7 +346,7 @@ figure.snip0015:hover figcaption::before {
         transition: .5s ease all;
     }
 
-    .nav .nav-menu .link:hover {
+    .nav .nav-menu .link:active {
         transform: translateX(40%);
         background-color: var(--purple-light);
 
