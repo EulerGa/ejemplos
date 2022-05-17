@@ -203,8 +203,8 @@ figure.snip0015 * {
 figure.snip0015 img {
     opacity: 1;
     width: 100%;
-    -webkit-transition: opacity 0.35s;
-    transition: opacity 0.35s;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
 
 }
 
