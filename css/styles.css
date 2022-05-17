@@ -14,55 +14,54 @@
     --white: #f4fffd;
 }
 
-
-header {
-
-    background-image: url(../images/bg-girl.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-img {
-    height: auto;
+.header-image {
     width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg-girl.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
 }
 
-.header-text {
+.header-image .header-text {
+    width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     color: var(--purple-light);
+
 }
 
-.header-text:hover {
+.header-image .header-text:hover {
 
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.header-text h1 {
 
+.header-image .header-text h1 {
     font-size: calc(2rem + 2vw);
     font-family: 'Noto Serif', serif;
 }
 
-.header-text .header-cite {
+.header-image .header-text .header-cite {
     font-size: calc(1.5rem + 1.5vw);
     font-family: 'Caveat', cursive;
     width: 60%;
 }
 
-.header-text .header-cite .quote {
+.header-image .header-text .header-cite .quote {
     width: 2rem;
     height: auto;
 }
 
-.header-text .header-cite .signature {
+.header-image .header-text .header-cite .signature {
     text-align: right;
 }
+
 
 
 .nav {
@@ -90,7 +89,7 @@ img {
     list-style: none;
 }
 
-.nav .nav-menu li a {
+.nav .nav-menu .link {
     display: inline-block;
     text-decoration: none;
     padding: 1rem 2rem;
@@ -99,20 +98,222 @@ img {
     transition: .5s ease all;
 }
 
-.nav .nav-menu li a:hover {
+.nav .nav-menu .link:hover {
     transform: translateY(40%);
     background-color: var(--purple-light);
 }
 
+.about {
+    margin-top: 8rem;
+}
+
+.subtitle {
+    font-size: calc(0.8em + 0.8vw);
+    color: var(--purple-dark);
+    font-family: 'Noto Serif', serif;
+    font-weight: 700;
+    z-index: 2;
+    margin-top: 1em;
+}
+
+.subtitle span {
+    background-color: var(--gray-light);
+    padding: 0 15px;
+    z-index: 3;
+    position: relative;
+
+}
+
+.subtitle::after {
+    content: "";
+    display: inline-block;
+    height: 0.1em;
+    width: 100%;
+    background: var(--purple-dark);
+    position: relative;
+    top: -1.5em;
+    z-index: 1;
+}
+
+.title {
+    width: 80%;
+    font-size: calc(1em + 1vw);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+.aboutme .link {
+    display: inline-block;
+    margin: 0.8em 0;
+    color: var(--purple-light);
+    font-weight: 700;
+    border-bottom: 0.1em solid transparent;
+    transition: .5s ease all;
+    text-decoration: none;
+}
+
+.aboutme .link:hover {
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    border-bottom: 0.1em solid var(--purple-light);
+}
+
+.aboutme img {
+    width: 100%;
+}
+
+.products {
+    background: var(--gray-light);
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.neurojoyas {
+    color: var(--purple-light);
+    font-size: calc(0.7rem + 0.7vw);
+    font-family: 'Noto Serif', serif;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+
+figure.snip0015 {
+
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    min-width: 220px;
+    max-width: 310px;
+    max-height: 220px;
+    width: 100%;
+    background: var(--purple-dark);
+    text-align: center;
+
+
+}
+
+figure.snip0015 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+figure.snip0015 img {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+
+}
+
+figure.snip0015 figcaption {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    padding: 3em 3em;
+    width: 100%;
+    height: 100%;
+
+}
+
+figure.snip0015 figcaption::before {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    bottom: 50%;
+    left: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+
+figure.snip0015 h2 {
+
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s, -o-transform 0.35s, transform 0.35s;
+}
+
+figure.snip0015 h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(0%, 50%, 0);
+    transform: translate3d(0%, 50%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+/* figure.snip0015 h2 span {
+    font-weight: 800;
+} */
+
+
+/* figure.snip0015 p {
+    font-weight: 200;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+} */
+
+figure.snip0015 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    color: #ffffff;
+}
+
+figure.snip0015:hover img {
+    opacity: 0.35;
+}
+
+figure.snip0015:hover figcaption h2 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+/* figure.snip0015:hover figcaption p {
+    opacity: 0.9;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+} */
+
+figure.snip0015:hover figcaption::before {
+    background: rgba(255, 255, 255, 0);
+    top: 30px;
+    bottom: 30px;
+    opacity: 1;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+
 
 @media (max-width: 800px) {
 
-    header .header-text .header-cite {
-        width: 85%;
+
+
+    .header-image .header-text .header-cite {
+        width: 80%;
     }
 
     .nav {
         flex-direction: column;
+
+
     }
 
     .nav .nav-menu {
@@ -135,22 +336,24 @@ img {
 
     }
 
-    .nav .nav-menu li a {
+    .nav .nav-menu .link {
 
         font-size: calc(0.8rem + 0.8vw);
         color: var(--gray-light);
         transition: .5s ease all;
     }
 
-    .nav .nav-menu li a:hover {
+    .nav .nav-menu .link:hover {
         transform: translateX(40%);
         background-color: var(--purple-light);
 
     }
 
-    /* .nav-toggle:focus:not(:focus-visible) {
+    .nav-toggle:focus:not(:focus-visible) {
         outline: none;
-    } */
+    }
 
-
+    .about {
+        margin-top: 5rem;
+    }
 }

@@ -7,4 +7,4 @@ navToggle.addEventListener("click",() => {
           x.style.right = '0%';
         }
     
-});
+}); 
