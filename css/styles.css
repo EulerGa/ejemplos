@@ -99,7 +99,7 @@
     transition: .5s ease all;
 }
 
-.nav .nav-menu .link:hover {
+.nav .nav-menu .link:active {
     transform: translateY(40%);
     background-color: var(--purple-light);
 }
