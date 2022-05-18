@@ -302,6 +302,28 @@ figure.snip0015:hover figcaption::before {
     transition-delay: 0s;
 }
 
+.separator {
+    width: 100%;
+    height: 250px;
+    background-image: url(../images/monse1_med.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.separator p {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(1.4rem + 1.4vw);
+    font-family: 'Caveat', cursive;
+    /* font-family: 'Noto Serif', serif; */
+    color: white;
+
+
+}
 
 
 
